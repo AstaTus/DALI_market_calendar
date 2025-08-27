@@ -1,0 +1,17 @@
+conda env update -f environment.yml --prune -v
+
+
+需要添加
+
+// --- 这里是新增的 VTIMEZONE 组件 ---
+BEGIN:VTIMEZONE
+TZID:Asia/Shanghai
+X-LIC-LOCATION:Asia/Shanghai
+BEGIN:STANDARD
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+TZNAME:CST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+// --- VTIMEZONE 组件结束 ---
